@@ -1,0 +1,33 @@
+#+BIND: org-html-toplevel-hlevel 1
+#+SETUPFILE: ~/.emacs.d/org-templates/level-1.org
+#+OPTIONS: toc:1
+#+OPTIONS: author:t
+#+TITLE: Autopoiesis
+#+AUTHOR: Will Vining
+
+* TODO Introduction
+
+The model presented by Varela, Maturana, and Urbie[fn:1] demonstrates an
+autopeietical organization that constructs and maintains a membrane
+surrounding a catalyst.
+
+I implemented the model using [[https://www.rust-lang.org][Rust]], since I have been wanting to learn
+more about the language. The source code is available [[https://github.com/wfvining/autopoiesis][here]].
+
+* TODO The Model
+The wold for the model is an infinite two dimensional grid filled
+completely with substrate elements. Distributed throughout the world
+are /catalyst/ elements that react with the substrate to form
+/links/. Reactions that form links consume two substrate elements,
+leaving behind a /hole/ in addition to the newly formed link.
+
+* TODO Making it asynchronous
+* TODO Results
+#+CAPTION: If catalysts (red) and holes (black) cannot pass through bonded links (pink and white for single- and double-bonded respectively), this is the result. Five catalysts are shown, none of which have established a closed membrane
+[[file:img/broken-autopoiesis.png]]
+
+* Footnotes
+
+[fn:1] Varela, F. G., Maturana, H. R., & Uribe,
+R. (1974). Autopoiesis: the organization of living systems, its
+characterization and a model. Biosystems, 5(4), 187-196.
