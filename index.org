@@ -1,6 +1,6 @@
 #+TITLE: Will Vining
+#+OPTIONS: title:nil
 
-* Will Vining
 I am a Ph.D. student in the biological computation lab under
 Dr. Melanie Moses where I work in support of the [[http://nasaswarmathon.com][NASA Swarmathon]]. My
 current research investigates situated auditory communication in a
@@ -10,8 +10,9 @@ computation.
 
 I received my bachelors degree in computer science from UNM
 in 2016. Following that I worked at Los Alamos National Laboratory in
-the High Performance Computing division on a peta-scale file system
-project called [[https://github.com/mar-file-system/marfs][MarFS]] which was was an [[https://rd100conference.com][R&D100 award]] finalist in 2016.
+the High Performance Computing division. My primary work at LANL was
+on a peta-scale file system project called [[https://github.com/mar-file-system/marfs][MarFS]] which was was an
+[[https://rd100conference.com][R&D100 award]] finalist in 2016.
 
 * Miscellany
 :PROPERTIES:
@@ -21,10 +22,9 @@ Most of the software I write is avaiable on [[https://github.com/wfvining][githu
 - A distributed, eventually consistent, implementation of [[https://github.com/wfvining/Meridian][MAPElites]]
 - my [[https://github.com/wfvining/emacs-stuff][emacs configuration]] which includes a beautiful [[file:img/wfv-color-theme.png][color scheme]] I
   have crafted of the last five or six years.
-
-I have been interested in the work of Francisco Varela lately, and
-wrote my own version of the [[file:autopoiesis.org][model of autopoiesis]] presented in his 1974
-paper.
+- An asynchronous version of the [[https://github.com/wfvining/autopoeisis][model of autopoiesis]] presented by
+  Varela, Maturana, and Uribe written in Rust. (Some incomplete
+  writing about this model can be found [[file:autopoiesis.org][here]]).
 
 * Publications
 :PROPERTIES:
@@ -34,3 +34,7 @@ paper.
 - Inman, J. T., Vining, W. F., Ransom, G. W., & Grider,
   G. A. (2017). [[https://www.usenix.org/publications/login/spring2017/inman][MarFS, a Near-POSIX Interface to Cloud
   Objects]]. ;Login:, 42(1).
+
+* Contact
+- office :: 3320 Farris Engineering Center
+- email  :: wfvining /at/ cs.unm.edu

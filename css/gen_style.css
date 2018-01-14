@@ -20,6 +20,17 @@
     color: #8ae234;
 }
 
+#postamble {
+    float: right;
+    margin-top: 50px;
+    font-size: 10px;
+    text-decoration-style: wavy;
+    font-style: italic;
+    color: darkgray;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
 #preamble {
     float: right;
 }
