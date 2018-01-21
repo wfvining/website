@@ -5,13 +5,13 @@ I am a Ph.D. student in the biological computation lab under
 Dr. Melanie Moses where I work in support of the [[http://nasaswarmathon.com][NASA Swarmathon]]. My
 current research investigates situated auditory communication in a
 robot swarm. More generally I am interested in situated communincation
-for robots, cognition, language, distributed systems and models of
-computation.
+for robot swarms, cognition, language, distributed systems and models
+of computation.
 
 I received my bachelors degree in computer science from UNM
 in 2016. Following that I worked at Los Alamos National Laboratory in
 the High Performance Computing division. My primary work at LANL was
-on a peta-scale file system project called [[https://github.com/mar-file-system/marfs][MarFS]] which was was an
+on a peta-scale file system project called [[https://github.com/mar-file-system/marfs][MarFS]] which was an
 [[https://rd100conference.com][R&D100 award]] finalist in 2016.
 
 * Miscellany
@@ -36,5 +36,8 @@ Most of the software I write is avaiable on [[https://github.com/wfvining][githu
   Objects]]. ;Login:, 42(1).
 
 * Contact
-- office :: 3320 Farris Engineering Center
-- email  :: wfvining /at/ cs.unm.edu
+:PROPERTIES:
+:CUSTOM_ID: contact
+:END:
+- office :: Farris Engineering Center 3320
+- email  :: =wfvining@cs.unm.edu=

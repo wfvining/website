@@ -190,3 +190,17 @@ p.footpara {
     margin-top: 0px;
     margin-left: 0px;
 }
+
+dl { margin: 0 50px; }
+
+dt { font-family: mono;
+     padding-right: 1em;
+     float: left;
+     text-align: right;
+     clear: left;
+     width: 100px;
+     color:#00a9e2
+}
+dt:after {
+    content: " ::"
+}
