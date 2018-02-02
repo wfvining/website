@@ -198,9 +198,12 @@ dt { font-family: mono;
      float: left;
      text-align: right;
      clear: left;
-     width: 100px;
+     width: 150px;
      color:#00a9e2
 }
 dt:after {
     content: " ::"
+}
+.MathJax_Display {
+    font-size: 0.9em;
 }

@@ -1,5 +1,4 @@
 #+TITLE: Will Vining
-#+OPTIONS: title:nil
 
 I am a Ph.D. student in the biological computation lab under
 Dr. Melanie Moses where I work in support of the [[http://nasaswarmathon.com][NASA Swarmathon]]. My
