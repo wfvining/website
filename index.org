@@ -19,11 +19,12 @@ on a peta-scale file system project called [[https://github.com/mar-file-system/
 :END:
 Most of the software I write is avaiable on [[https://github.com/wfvining][github]]. A few hilights are
 - A distributed, eventually consistent, implementation of [[https://github.com/wfvining/Meridian][MAPElites]]
-- my [[https://github.com/wfvining/emacs-stuff][emacs configuration]] which includes a beautiful [[file:img/wfv-color-theme.png][color scheme]] I
+- My [[https://github.com/wfvining/emacs-stuff][emacs configuration]] which includes a beautiful [[file:img/wfv-color-theme.png][color scheme]] I
   have crafted of the last five or six years.
-- An asynchronous version of the [[https://github.com/wfvining/autopoeisis][model of autopoiesis]] presented by
-  Varela, Maturana, and Uribe written in Rust. (Some incomplete
-  writing about this model can be found [[file:autopoiesis.org][here]]).
+- Some of my notes on the [[file:computation.org][theory of computation]].
+# - An asynchronous version of the [[https://github.com/wfvining/autopoeisis][model of autopoiesis]] presented by
+#   Varela, Maturana, and Uribe written in Rust. (Some incomplete
+#   writing about this model can be found [[file:autopoiesis.org][here]]).
 
 * Publications
 :PROPERTIES:

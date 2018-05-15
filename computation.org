@@ -2,9 +2,11 @@
 #+OPTIONS: toc:2
 #+HTML_MATHJAX: font:'Neo Euler' font-size:0.5em
 
+* Introduction
 These are some notes I have put together while taking "Introduction to
-the Theory of Computation" in spring 2018 at UNM.
-
+the Theory of Computation" in spring 2018 at UNM. These notes are
+based on class lectures, Christopher Moore's automata theory notes[fn:1],
+and an excellent set of lectures from IIT[fn:2].
 * Automata Theory
 Automata theory describes the properties of simple machines that
 process strings of symbols. Different kinds of machines can process
@@ -12,29 +14,48 @@ different classes of languages. Before discussing machines we need a
 definition of a language, an alphabet, and a string.
 
 - alphabet :: a finite set of symbols (typically called \(\Sigma\))
-- string :: a finite sequence of symbols from an alphabet[fn:1]
-- language :: a set L of strings over some alphabet
+- string :: a finite sequence of symbols from an alphabet[fn:3]
+- language :: a set of strings over some alphabet
 
 By these definitions a language over some alphabet \(\Sigma\) could be
-any subset of \(\Sigma^*\). For example, the language \(L_1\) over the
-alphabet \(\Sigma = \{a,b\}\) that consists of any non-zero number of
-\(a\)s followed by the same number of \(b\)s would be written as \[L_1
-= \{a^ib^i \mid \forall i \in \mathbb{N}\}.\] Here are a few more
+any subset of \(\Sigma^*\) (including only the empty string
+\(\epsilon\)). For example, the language \(L_1\) over the alphabet
+\(\Sigma = \{a,b\}\) that consists of any non-zero number of \(a\)s
+followed by the same number of \(b\)s would be written as \[L_1 =
+\{a^ib^i \mid \forall i \in \mathbb{N}\}.\] Here are a few more
 examples of languages: \[L_2 = \{ w \in \{0,1,2\}^* \mid w =
 w_1w_2\ldots w_n. \sum_{i=1}^n w_i \equiv 2 \mod 3\}\] \[L_3 = \{w \in
 \{0,1\}^* \mid \text{$w$ contains an even number of 1s}\}\] \[L_4 =
 \{w \in \{a,b\}^* \mid \text{$w$ ends in "ab"}\}\] \[L_5 = \{w \in
-\{0,1\}^* \mid w_0 \ne 0 \land \text{$w$ is the binary representation of a natural
-number less than 50}\}\]
+\{0,1\}^* \mid w_0 \ne 0 \land \text{$w$ is the binary representation
+of a natural number less than 50}\}\]
 
 Languages can be finite or infinite, as seen above. Most of the
 interesting properties we are concerned with, however, relate to
 infinite languages.
 
 ** Finite State Automata
-A finite state automaton is an abstract machine with a finite set of
-states that reads a string one symbol at a time and changes its state
-based on the symbol it has read.
+A finite state automaton (FSA) is an abstract machine with a finite
+set of states that reads a string from left to right one symbol at a
+time and changes its state based on the symbol it has read. To define
+a FSA, we must specify the following:
+- \(Q\) :: a finite set of states the machine can be in
+- \(q_0\) :: the state the machine starts in (before it has seen any symbols)
+- \(\Sigma\) :: the alphabet
+- \(\delta\) :: the transition function \(\delta : (Q \times \Sigma) \to Q\)
+- \(F\) :: a subset of \(Q\)
+A FSA \(M\) is defined by the 5-tuple \[M = (Q, q_0, \Sigma, \delta,
+F).\]
+
+To describe what state the machine is in after reading a string \(s\)
+we refer to the iterated transition function \[\delta^*(q,
+s_1s_2\ldots s_n) = \delta^*(\delta(q, s_1), s_2\ldots s_n)\]
+
+A language \(L\) is accepted by a machine \(M\) if and only if for all
+strings \(w \in L\), \(\delta^*(q_0, w) \in F\) and for all \(w \notin
+L\), \(\delta^*(q_0, w) \notin F\). In other words, the strings in the
+language /and no other strings/ take the machine from its initial
+state to a final, or accepting, state.
 ** Regular Languages
 *** Closure under Complement
 *** Closure under Union
@@ -43,6 +64,10 @@ based on the symbol it has read.
 
 * Footnotes
 
-[fn:1] For a string \(w\) I will use the notation \(w_i\) to refer to
-the \(i^{\text{th}}\) symbol in that string.
+[fn:1] Moore, Christopher. Automata, Languages, and Grammars (2015).
 
+[fn:2] Biwas, Somenath. [[https://www.youtube.com/watch?v=al4AK6ruRek&list=PLbMVogVj5nJSd25WnSU144ZyGmsqjuKr3][Theory of Computation]], Indian Institute of
+Technology Kanpur.
+
+[fn:3] For a string \(w\) I will use the notation \(w_i\) to refer to
+the \(i^{\text{th}}\) symbol in that string.
