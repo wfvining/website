@@ -41,7 +41,10 @@ a
 {
     text-decoration:none;
     /* color: #8AE234; */
-    color: #8ce436;
+    color: #ae4dc2  ;
+}
+.menu>a {
+    color: #469990;
 }
 p
 {
@@ -73,27 +76,27 @@ li
 h1
 {
     text-indent:50px;
-    color:#00a9e2;
-    border-left: 50px #00a9e2 solid;
-    font-family: 'Playfair Display', serif;
+    color:#469990;
+    border-left: 50px #469990 solid;
+    font-family: 'Source Serif Pro', serif;
     font-weight: lighter;
 }
 h2
 {
     text-indent:25px;
     font-style:italic;
-    color:#00a9e2;
-    font-family: 'Playfair Display';
+    color:#469990;
+    font-family: 'Source Serif Pro';
     font-weight: lighter;
 }
 h3
 {
     text-indent:50px;
     font-style:italic;
-    font-family: 'Raleway';
+    font-family: 'Source Sans Pro';
     font-variant: small-caps;
     font-weight: lighter;
-    color:#00a9e2;
+    color:#469990;
 }
 h4
 {
@@ -106,16 +109,17 @@ h4
 
 body
 {
-    background:#464646;
-    color: #d0d0d0;
-    font-family: "Raleway",Helvetica,Arial,sans-serif;
+    background:#fcfcfc;
+    color: #656565;
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
     max-width: 800px;
+    font-size: 14pt;
 }
 
 .menu
 {
     font-variant: small-caps;
-    font-size:20px;
+    font-size:18pt;
 }
 ol
 {
@@ -135,7 +139,7 @@ div.menu {
 }
 ul.menu {
     float: right;
-    border-bottom: 1px #8ae234 solid;
+    border-bottom: 1px #469990 solid;
 }
 li.menu
 {
@@ -193,16 +197,25 @@ p.footpara {
 
 dl { margin: 0 50px; }
 
-dt { font-family: mono;
+dt { font-family: "Source Sans Pro";
+     /*font-variant: small-caps;*/
+
      padding-right: 1em;
      float: left;
      text-align: right;
      clear: left;
      width: 150px;
-     color:#00a9e2
+     color:#469990
 }
 dt:after {
-    content: " ::"
+    content: " : "
+}
+dd {
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
+code {
+    font-family: "Source Code Pro"
 }
 .MathJax_Display {
     font-size: 0.9em;

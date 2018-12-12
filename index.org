@@ -1,5 +1,5 @@
 #+TITLE: Will Vining
-
+* Will Vining
 I am a Ph.D. student in the biological computation lab under
 Dr. Melanie Moses where I work in support of the [[http://nasaswarmathon.com][NASA Swarmathon]]. My
 current research investigates situated auditory communication in a
@@ -13,29 +13,34 @@ the High Performance Computing division. My primary work at LANL was
 on a peta-scale file system project called [[https://github.com/mar-file-system/marfs][MarFS]] which was an
 [[https://rd100conference.com][R&D100 award]] finalist in 2016.
 
-* Miscellany
+** Publications
 :PROPERTIES:
-:CUSTOM_ID: misc
+:CUSTOM_ID: publications
+:END:
+*** 2018
+- Vining, W. F., Esponda, F., Moses, M. E., Forrest,
+  S. (2018). Mobility Improves Computation in Loosely Coupled
+  Multi-Agent Systems. /Philosophical Transactions of the
+  Royal Society: B/. In Review.
+*** 2017
+- Inman, J. T., Vining, W. F., Ransom, G. W., & Grider,
+  G. A. (2017). [[https://www.usenix.org/publications/login/spring2017/inman][MarFS, a Near-POSIX Interface to Cloud
+  Objects]]. ;Login:, 42(1).
+
+** Software
+:PROPERTIES:
+:CUSTOM_ID: software
 :END:
 Most of the software I write is avaiable on [[https://github.com/wfvining][github]]. A few hilights are
 - A distributed, eventually consistent, implementation of [[https://github.com/wfvining/Meridian][MAPElites]]
 - My [[https://github.com/wfvining/emacs-stuff][emacs configuration]] which includes a beautiful [[file:img/wfv-color-theme.png][color scheme]] I
   have crafted of the last five or six years.
-- Some of my notes on the [[file:computation.org][theory of computation]].
+# - Some of my notes on the [[file:computation.org][theory of computation]].
 # - An asynchronous version of the [[https://github.com/wfvining/autopoeisis][model of autopoiesis]] presented by
 #   Varela, Maturana, and Uribe written in Rust. (Some incomplete
 #   writing about this model can be found [[file:autopoiesis.org][here]]).
 
-* Publications
-:PROPERTIES:
-:CUSTOM_ID: publications
-:END:
-** 2017
-- Inman, J. T., Vining, W. F., Ransom, G. W., & Grider,
-  G. A. (2017). [[https://www.usenix.org/publications/login/spring2017/inman][MarFS, a Near-POSIX Interface to Cloud
-  Objects]]. ;Login:, 42(1).
-
-* Contact
+** Contact
 :PROPERTIES:
 :CUSTOM_ID: contact
 :END:
