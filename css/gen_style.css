@@ -1,16 +1,16 @@
 .todo {
-    font-family: 'Raleway',sans;
+    font-family: 'Source Code Pro',sans;
     font-style: normal;
     border: solid;
     border-radius: 3px;
     padding-left: 5px;
     padding-right: 5px;
     border-width: 1px;
-    color: white;
+    color: #a42424;
 }
 
 .done {
-    font-family: 'Raleway',sans;
+    font-family: 'Source Code Pro',sans;
     font-style: normal;
     border: solid;
     border-radius: 3px;
@@ -29,6 +29,7 @@
     color: darkgray;
     margin-right: 100px;
     margin-bottom: 20px;
+    width: auto;
 }
 
 #preamble {
@@ -137,6 +138,9 @@ div.content {
 div.menu {
     width: 100%;
 }
+div {
+    width: 100%;
+}
 ul.menu {
     float: right;
     border-bottom: 1px #469990 solid;
@@ -219,4 +223,14 @@ code {
 }
 .MathJax_Display {
     font-size: 0.9em;
+}
+pre {
+    border: 1px solid #ccc;
+    box-shadow: 6px 6px 6px #bbb;
+    padding: 8pt;
+    font-family: "Source Code Pro",monospace;
+    overflow: auto;
+    margin: 1.2em;
+    background-color: #464646;
+    color: #ccc;    font-size: 12pt;
 }
