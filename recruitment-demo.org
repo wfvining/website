@@ -238,21 +238,23 @@ tagged with the name /this robot/ to the complementary laptop
 topic. Simultaneously we have subscribed to the laptop version of this
 topic. In this handler we do the complementary action relaying
 messages from the laptop to the robot only if the message is /not/
-tagged with the robot's name. This selectivity is absolutely vital
-because it prevents an infinite feedback loop where the robot
+tagged with the robot's name. *This selectivity is absolutely vital
+because it prevents an infinite feedback loop* where the robot
 publishes a message that is relayed back to itself through the laptop
 at which point roslibjs sees the message and relays it again (and so
 on, and so on).
 
 #+begin_src javascript
-this.recruitmentTopic.subscribe(function(msg) {
+// Note that we use arrow type callbacks in order to capture
+// the value of "this"!
+this.recruitmentTopic.subscribe((msg) => {
    // only share our own recruitment messages
    if(msg.name.data == this.robotName)
    {
       this.ltRecruitmentTopic.publish(msg);
    }
 });
-this.ltRecruitmentTopic.subscribe(function(msg) {
+this.ltRecruitmentTopic.subscribe((msg) => {
    // only pass through messages that are from other robots
    if(msg.name.data != this.robotName)
    {
