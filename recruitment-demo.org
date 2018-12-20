@@ -262,3 +262,28 @@ this.ltRecruitmentTopic.subscribe((msg) => {
    }
 });
 #+end_src
+
+*** Benefits and Limitations
+The use of our rosbridge shim above lets each robot operate
+independently so they are protected from failure of the network and of
+the laptop. However, if the laptop fails, recruitment will stop
+working. It is possible to make recruitment robust to failure of the
+laptop by setting up peer-to-peer connections between robots. This
+would require
+1. Node discovery. Somehow robots need to determine what other robots
+   are running. You can do this in a similar way to the recruitment
+   example (it is reasonable to assume that at least for a short
+   period of time the laptop is up and working since that is how we
+   start the robots).
+2. A ROS node to set up and manage websocket connections between the
+   robots. You do not need to use javascript to communicate with the
+   rosbridge websocket server.
+
+   This node will effectively do what the javascript code above does;
+   relay messages between robots.
+
+Note that you will need to be able to tolerate not connecting to the
+websocket server in order for code to work in simulation (when the
+websocket server is not running). *You should write your code (as was
+done above) so that it is agnostic to whether messages are being sent
+locally or via rosbridge*.

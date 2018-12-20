@@ -35,6 +35,8 @@ Most of the software I write is avaiable on [[https://github.com/wfvining][githu
 - A distributed, eventually consistent, implementation of [[https://github.com/wfvining/Meridian][MAPElites]]
 - My [[https://github.com/wfvining/emacs-stuff][emacs configuration]] which includes a beautiful [[file:img/wfv-color-theme.png][color scheme]] I
   have crafted of the last five or six years.
+- A [[file:recruitment-demo.org][tutorial]] on how to do simple recruitment using the base code for
+  the NASA Swarmathon.
 # - Some of my notes on the [[file:computation.org][theory of computation]].
 # - An asynchronous version of the [[https://github.com/wfvining/autopoeisis][model of autopoiesis]] presented by
 #   Varela, Maturana, and Uribe written in Rust. (Some incomplete
