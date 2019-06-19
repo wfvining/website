@@ -115,6 +115,7 @@ body
     font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
     max-width: 800px;
     font-size: 14pt;
+    margin: auto;
 }
 
 .menu
